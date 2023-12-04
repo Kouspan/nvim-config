@@ -11,7 +11,7 @@ opt.number = true -- print number line
 opt.laststatus = 3 -- behavior of status-line
 opt.pumblend = 15 -- popup menu transparency
 opt.pumheight = 10 -- maximum number of entries in a popup
-opt.signcolumn = "auto:2"
+opt.signcolumn = "auto:3"
 opt.showmode = false
 opt.termguicolors = true -- true color support
 
@@ -22,7 +22,7 @@ opt.tabstop = 4 -- number of spaces tabs count for
 opt.smartindent = true
 
 -- Behavior
-opt.sessionoptions = { "buffers", "curdir", "tabpages", "help", "globals", "skiprtp", "folds"}
+opt.sessionoptions = { "winsize", "buffers", "curdir", "tabpages", "help", "globals", "skiprtp", "folds"}
 opt.shortmess:append({ W = true, I = true, c = true, C = true })
 opt.wildmode = "longest:full,full"
 
@@ -38,8 +38,7 @@ opt.fillchars = {
 }
 opt.foldmethod = "indent"
 opt.foldlevel = 99
-opt.foldcolumn = "1"
-
+opt.foldcolumn = "0"
 
 --Searching
 opt.ignorecase = true
