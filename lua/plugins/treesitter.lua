@@ -1,18 +1,42 @@
 return {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
+	event = { "BufReadPre", "BufNewFile" },
+	dependencies = {
+		"nvim-treesitter/nvim-treesitter-textobjects"
+	},
     config = function()
-	local configs = require("nvim-treesitter.configs")
-	local install = require("nvim-treesitter.install")
+		local configs = require("nvim-treesitter.configs")
+		local install = require("nvim-treesitter.install")
 
-	install.prefer_git = false
-	install.compilers = {"cl"}
+		install.prefer_git = false
+		install.compilers = {"cl"}
 
-	configs.setup({
-	    ensure_installed = {"c","c_sharp","cmake","cpp","lua","python", "vim", "vimdoc", "query"},
-	    sync_isntall = false,
-	    highlight = {enable = true},
-	    indent = {enable = true},
-	})
+		configs.setup({
+			sync_isntall = false,
+			highlight = {enable = true},
+			indent = {enable = true},
+			incremental_selection = {
+				enable = true,
+				keymaps = {
+					init_selection = "<leader>s",
+					node_incremental = "<leader>s",
+					scope_incremental = false,
+					node_decremental = "<bs>",
+				}
+			},
+			ensure_installed = {
+				"c",
+				"c_sharp",
+				"cmake",
+				"cpp",
+				"lua",
+				"python",
+				"vim",
+				"vimdoc",
+				"query"
+				}
+
+		})
     end
 }
