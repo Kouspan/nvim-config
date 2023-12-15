@@ -11,7 +11,7 @@ opt.number = true -- print number line
 opt.laststatus = 3 -- behavior of status-line
 opt.pumblend = 15 -- popup menu transparency
 opt.pumheight = 10 -- maximum number of entries in a popup
-opt.signcolumn = "auto:3"
+opt.signcolumn = "yes"
 opt.showmode = false
 opt.termguicolors = true -- true color support
 

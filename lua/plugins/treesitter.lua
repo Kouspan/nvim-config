@@ -1,21 +1,21 @@
 return {
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
+	"nvim-treesitter/nvim-treesitter",
+	build = ":TSUpdate",
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
 		"nvim-treesitter/nvim-treesitter-textobjects"
 	},
-    config = function()
-		local configs = require("nvim-treesitter.configs")
+	config = function()
 		local install = require("nvim-treesitter.install")
 
 		install.prefer_git = false
-		install.compilers = {"cl"}
+		install.compilers = { "cl" }
 
+		local configs = require("nvim-treesitter.configs")
 		configs.setup({
 			sync_isntall = false,
-			highlight = {enable = true},
-			indent = {enable = true},
+			highlight = { enable = true },
+			indent = { enable = true },
 			incremental_selection = {
 				enable = true,
 				keymaps = {
@@ -35,8 +35,8 @@ return {
 				"vim",
 				"vimdoc",
 				"query"
-				}
+			}
 
 		})
-    end
+	end
 }
