@@ -9,7 +9,6 @@ return {
 		local install = require("nvim-treesitter.install")
 
 		install.prefer_git = false
-		install.compilers = { "cl" }
 
 		local configs = require("nvim-treesitter.configs")
 		configs.setup({
