@@ -1,6 +1,10 @@
+--global variables
+vim.g.loaded_python3_provider = 0
+
+--options
 local opt = vim.opt
 
-opt.clipboard = "unnamedplus" -- sync with system clipboard
+--opt.clipboard = "unnamedplus" -- sync with system clipboard
 opt.confirm = true -- confirm to save changes before exiting modiefied buffer
 
 -- Editor Style
@@ -17,10 +21,10 @@ opt.termguicolors = true -- true color support
 
 --Editing
 opt.shiftround = true -- use multiple of shiftwidth
-opt.shiftwidth = 4 -- size of an indent
-opt.tabstop = 4 -- number of spaces tabs count for
+opt.shiftwidth = 2 -- size of an indent
+opt.tabstop = 2 -- number of spaces tabs count for
 opt.smartindent = true
-
+opt.expandtab = true
 -- Behavior
 opt.sessionoptions = { "winsize", "buffers", "curdir", "tabpages", "help", "globals", "skiprtp", "folds"}
 opt.shortmess:append({ W = true, I = true, c = true, C = true })
