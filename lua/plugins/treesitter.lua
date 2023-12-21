@@ -34,6 +34,7 @@ return {
 				"python",
 				"vim",
 				"vimdoc",
+				"json",
 				"query"
 			}
 
