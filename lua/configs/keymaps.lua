@@ -8,3 +8,8 @@ vim.keymap.set('i', 'kj', '<Esc>')
 vim.keymap.set('n', '<C-D>', '<CMD>t .<CR>')
 vim.keymap.set('n', '<C-K>', '<CMD>mo -2<CR>')
 vim.keymap.set('n', '<C-J>', '<CMD>mo +1<CR>')
+
+
+--BUFFERS--
+vim.keymap.set('n', ']b', '<CMD>bn<CR>')
+vim.keymap.set('n', '[b', '<CMD>bp<CR>')
