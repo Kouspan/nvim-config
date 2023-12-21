@@ -24,11 +24,11 @@ return {
 			lualine_a = {'mode'},
 			lualine_b = {'branch', 'diff', 'diagnostics'},
 			lualine_c = {'filename'},
-			lualine_x = {'buffers','filetype'},
+			lualine_x = {'filetype'},
 			lualine_y = {'progress'},
 			lualine_z = {'location'}
 		},
-		inactive_sections = {
+		inactive_sections = { -- Sections for the inactive windows' statusline
 			lualine_a = {},
 			lualine_b = {},
 			lualine_c = {'filename'},
@@ -37,7 +37,9 @@ return {
 			lualine_z = {}
 		},
 		tabline = {},
-		winbar = {},
+		winbar = {
+			lualine_a = {'buffers'},
+		},
 		inactive_winbar = {},
 		extensions = {}
 		}
