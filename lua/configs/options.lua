@@ -14,6 +14,7 @@ opt.confirm = true -- confirm to save changes before exiting modiefied buffer
 --Editor Style--
 opt.wrap = false
 opt.cursorline = true
+opt.cursorlineopt = "number"
 opt.relativenumber = true
 opt.number = true -- print number line
 opt.pumblend = 15 -- popup menu transparency

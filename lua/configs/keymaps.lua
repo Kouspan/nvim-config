@@ -1,10 +1,10 @@
 vim.keymap.set('i', '<C-J>', '<Nop>', {silent = true})
+vim.keymap.set('n', '<Space>', '<Nop>', {silent = true})
 
 vim.g.mapleader = ' '
 vim.keymap.set('i', 'jk', '<Esc>')
 vim.keymap.set('i', 'kj', '<Esc>')
-vim.keymap.set('n', '<Space>', '<Nop>', {silent = true})
-
+vim.keymap.set('n', '<C-S>', '<CMD>w<CR>')
 --COPY,MOVE--
 -- duplication
 vim.keymap.set('n', '<C-D>', '<CMD>t .<CR>')

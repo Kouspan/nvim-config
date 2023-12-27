@@ -4,7 +4,7 @@ return {
   opts = {
     options = {
       icons_enabled = true,
-      theme = 'material',
+      theme = 'modus-vivendi',
       component_separators = { left = '', right = '' },
       section_separators = { left = '', right = '' },
       disabled_filetypes = {
@@ -29,7 +29,7 @@ return {
       lualine_z = { 'location' }
     },
     tabline = {
-      lualine_a = { { 'buffers', mode = 2 } },
+      lualine_a = { { 'buffers', mode = 4 } },
       lualine_z = { { 'windows', mode = 2 } }
     },
     extensions = {}
