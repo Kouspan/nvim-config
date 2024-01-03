@@ -22,6 +22,8 @@ opt.pumheight = 10 -- maximum number of entries in a popup
 opt.signcolumn = "yes"
 opt.showmode = false
 opt.termguicolors = true -- true color support
+opt.title = true
+opt.titlestring = "nvim:%t"
 
 --Editing--
 opt.shiftround = true -- use multiple of shiftwidth

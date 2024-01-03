@@ -1,6 +1,11 @@
 return {
   'neovim/nvim-lspconfig',
   cmd = { 'LspInfo', 'LspInstall', 'LspStart' },
+ -- event = { {
+ --   event = { 'BufReadPre', 'BufNewFile' },
+ --   pattern = { '*.lua' }
+ -- }
+ -- },
   keys = { { '<leader>ll', '<CMD>LspStart<CR>', desc = "LSP" } },
   dependencies = {
     { 'williamboman/mason.nvim' },
@@ -29,6 +34,5 @@ return {
         vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<cr>', opts)
       end
     })
-
   end
 }

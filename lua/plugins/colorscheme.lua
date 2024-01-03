@@ -1,7 +1,7 @@
 return {
   {
     "navarasu/onedark.nvim",
-    lazy = true,
+    lazy = false,
     priority = 1000,
     config = function()
       M = require("onedark")
@@ -12,7 +12,7 @@ return {
   {
     "miikanissi/modus-themes.nvim",
     priority = 1000,
-    lazy = false,
+    lazy = true,
     config = function ()
       require("modus-themes").setup({
         style = "modus_vivendi",
